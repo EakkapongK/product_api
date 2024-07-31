@@ -1,0 +1,1 @@
+dotnet ef dbcontext scaffold "Server=localhost; Database=TestDB; User Id=sa;Password=Admin123;TrustServerCertificate=true" Microsoft.EntityFrameworkCore.SqlServer --table Users --table Products  --context-dir Data -o Models/DB -c "DataContext" --force
