@@ -47,6 +47,7 @@ namespace TestApi.Controllers
         [HttpPost("Add")]
         public async Task<ActionResult<ServiceResponse<GetProductDto>>> AddProduct(AddProductDto request)
         {
+            //add
             var response = await _ProductService.AddProduct(request);
             if (!response.Success)
             {
